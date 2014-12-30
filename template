@@ -75,6 +75,8 @@ case "$1" in
         echo "Unable to stop, will not attempt to start"
         exit 1
     fi
+	# Allow all resources to shutdown
+	sleep 5
     $0 start
     ;;
     status)
